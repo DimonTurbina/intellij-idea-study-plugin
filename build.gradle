@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '1.1.6'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+
+repositories{
+    mavenCentral()
+}
+
+intellij {
+    version = '2021.2.2'
+}
+patchPluginXml {
+    changeNotes = """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
